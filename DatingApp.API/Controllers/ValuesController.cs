@@ -36,9 +36,9 @@ namespace DatingApp.API.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetValue(int id)
         {
-            var IdValue = await _context.Values.FirstOrDefaultAsync(x => x.Id == id);
+            var idValue = await _context.Values.FirstOrDefaultAsync(x => x.Id == id);
 
-            return Ok(IdValue);
+            return Ok(idValue);
         }
 
         // POST api/values
