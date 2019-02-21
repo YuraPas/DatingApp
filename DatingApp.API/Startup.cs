@@ -90,7 +90,7 @@ namespace DatingApp.API
             //app.UseHttpsRedirection();
 
             //service for seeding data into our database instead of manual typing
-            //seeder.SeedUsers();
+            seeder.SeedUsers();
             app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseAuthentication();
             app.UseMvc();
